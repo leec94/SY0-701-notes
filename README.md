@@ -13,6 +13,11 @@ Notes on CompTIA Security+ SY0-701 exam, covering gaps in my knowledge from vari
 ### General security concepts
 
 ### Threats, vulnerability, and mitigations
+- logic bomb: a type of malware that executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
+- ransomware: a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration
+- trojan: a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed.
+- worm: a type of malware that self-replicates and spreads to other systems or networks without user interaction
+
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
 - Jump server: used as a bridge to connect to other servers or networks in separate security zones
