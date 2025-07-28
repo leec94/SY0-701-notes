@@ -13,14 +13,15 @@ Notes on CompTIA Security+ SY0-701 exam, covering gaps in my knowledge from vari
 ### General security concepts
 
 ### Threats, vulnerability, and mitigations
-- logic bomb: a type of malware that executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
-- ransomware: a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration
-- trojan: a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed.
-- worm: a type of malware that self-replicates and spreads to other systems or networks without user interaction
+- Logic bomb: a type of malware that executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
+- Ransomware: a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration
+- Trojan: a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed.
+- Worm: a type of malware that self-replicates and spreads to other systems or networks without user interaction
 
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
 - Jump server: used as a bridge to connect to other servers or networks in separate security zones
+- Real-time Operating System (RTOS): an operating system where the processes running are deterministic and prioritize performance, used on devices like industrial equipment and automobiles. \[[Ref](https://www.professormesser.com/security-plus/sy0-501/embedded-systems/)\] 
   
 ### Security operations
 Types of web filters:
@@ -40,6 +41,12 @@ Features of stateful firewall:
 - tracking of connections and requests
 - allowing return traffic for outbound requests
 - improving awareness of connection states on layer 4
+
+WPA3 features:
+- latest and most secure wireless security protocol
+- utilizes a Diffie-Hellman key agreement
+- provides individualized data encryption even in open networks
+- it prevents eavesdropping, forging, and tampering with management frames
 
   
 ### Security program management and oversight
