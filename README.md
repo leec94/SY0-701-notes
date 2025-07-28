@@ -18,7 +18,7 @@ Concealment types
 - Encryption: the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted
 
 ### Threats, vulnerability, and mitigations
-Malware types:
+Malware types
 - Logic bomb: executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
 - Ransomware: encrypts the data or files on a system and demands a ransom for their decryption or restoration
 - Trojan: disguises itself as a legitimate or benign program, but performs malicious actions when executed.
@@ -44,7 +44,7 @@ Backup types
 - Real-time Operating System (RTOS): an operating system where the processes running are deterministic and prioritize performance, used on devices like industrial equipment and automobiles. \[[Ref](https://www.professormesser.com/security-plus/sy0-501/embedded-systems/)\] 
   
 ### Security operations
-Types of web filters:
+Types of web filters
 - Agent-based web filters: installed directly on the end-user's device, ensuring that the filtering policy is enforced consistently, whether the user is on the corporate network or working remotely \[[Ref](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/web-filtering-sy0-701/)\]
 - Web security gateway filters: or Unified Threat Management (UTM) device, is a device that filters unsafe content from web traffic, and block risky or unauthorized user behavior. Contains URL filtering, anti-malware detection and blocking, and application control. Also has featues such as firewall, intrusion prevention, and antivirus. Runs on proxy servers or on-prem or in the cloud. \[[Ref](https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway/)\]
 
@@ -52,17 +52,17 @@ Network Access Control: enforces policies that determine which devices are allow
 - Agent-based NAC: requires an agent to be installed on every device. Is able to get more detailed information about the device requesting access to the network, and provides continuous monitoring \[[Ref](https://s3msecurity.com/agent-based-or-agentless-which-should-be-preferred/)\]
 - Agentless NAC: does not require installation of agents on devices, typically relies on network level authentication protocols such as 802.1X to authenticate devices and enforce access policies. May be less effective at enforcing security policies 
 
-Features of Next Generation Firewall (NGFW): 
+Features of Next Generation Firewall (NGFW) 
 - application awareness that can distinguish between different types of traffic
 - can conduct deep packet inspection and use signature-based intrusion detection
 - has the ability to be integrated with various other security products
 
-Features of stateful firewall:
+Features of stateful firewall
 - tracking of connections and requests
 - allowing return traffic for outbound requests
 - improving awareness of connection states on layer 4
 
-WPA3 features:
+WPA3 features
 - latest and most secure wireless security protocol
 - utilizes a Diffie-Hellman key agreement
 - provides individualized data encryption even in open networks
