@@ -18,10 +18,11 @@ Concealment types
 - Encryption: the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted
 
 ### Threats, vulnerability, and mitigations
-- Logic bomb: a type of malware that executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
-- Ransomware: a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration
-- Trojan: a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed.
-- Worm: a type of malware that self-replicates and spreads to other systems or networks without user interaction
+Malware types:
+- Logic bomb: executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
+- Ransomware: encrypts the data or files on a system and demands a ransom for their decryption or restoration
+- Trojan: disguises itself as a legitimate or benign program, but performs malicious actions when executed.
+- Worm: self-replicates and spreads to other systems or networks without user interaction
 
 Password attacks
 - Spraying: trying common passwords against multiple accounts, hoping to find a match
