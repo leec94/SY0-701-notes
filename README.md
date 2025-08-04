@@ -28,6 +28,19 @@ Security Controls \[[Ref](https://purplesec.us/learn/security-controls/)\]
 - Compensating: alternative controls used when a primary control is not feasible
 - Directive: ensure consistent behavior within an organization
 
+Access Controls
+- Role-Based Access Control (RBAC): an authorization model that assigns permissions to roles, rather than individual users
+- Attribute Based Access Control (ABAC): determines access through a combination of contexts and system wide attributes
+- Discretionary Access Control (DAC): an authorization model where the owner of the resource decides who is allowed to access it
+- Mandatory Access Control (MAC): an authorization model where access to resources is determined by a set of rules defined by a central authority
+
+Zero trust concepts
+- Policy administrator: responsible for defining and managing security policies that dictate access controls
+- Authentication server: primarily tasked with validating a user's credentials and ensuring that a user is who they claim to be
+- Policy enforcement point: responsible for enforcing the access control decisions made by the policy engine
+
+
+
 ### Threats, vulnerability, and mitigations
 Malware types
 - Logic bomb: executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
@@ -84,11 +97,25 @@ Features of stateful firewall
 - allowing return traffic for outbound requests
 - improving awareness of connection states on layer 4
 
-WPA3 features
-- latest and most secure wireless security protocol
-- utilizes a Diffie-Hellman key agreement
-- provides individualized data encryption even in open networks
-- it prevents eavesdropping, forging, and tampering with management frames
+NetFlow features
+- allows for the visualization of flow patterns
+- can help with capacity planning and understanding network performance issues
+- can identify the source and destination of traffic, making it easier to spot potential threats
+- helps provide an understanding of network traffic flow, enhancing security by identifying unusual patterns
+
+Wireless Protocols 
+- **AES**: the most secure and widely adopted encryption protocol for wireless networks. Its strong encryption algorithms and extensive testing demonstrate its effectiveness against various attacks. AES is the recommended choice for ensuring robust security in wireless communication
+- WEP: outdated encryption protocol that has been widely exploited and rendered highly insecure. Its weak key management and static keys make it vulnerable to various attacks, and it can be cracked relatively easily. It should be avoided in modern network environments due to its lack of security
+- TKIP: considered weak and has known vulnerabilities. Due to its security limitations, using TKIP is not advisable, especially when more secure alternatives like AES are available.
+- WPA: has some known vulnerabilities, particularly when using its pre-shared key (PSK) mode. Depending solely on WPA might not provide the level of security required to safeguard modern wireless networks
+- **WPA3** features
+  - latest and most secure wireless security protocol
+  - utilizes a Diffie-Hellman key agreement
+  - provides individualized data encryption even in open networks
+  - it prevents eavesdropping, forging, and tampering with management frames
+
+Encryption protocols
+
 
 Mobile
 - Mobile Device Management (MDM): provide organizations with an easy way to manage the security settings on many mobile devices simultaneously. \[[Ref](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/mobile-device-management-2/)\]
@@ -108,3 +135,12 @@ Data Governance
 - Governance board: sets the strategic direction and policies for organizational data management.
 - Security and compliance committees: assessing and managing risks related to data security and compliance
 
+Agreement Types
+- Service Level Agreement (SLA): a document that defines the expectations between an organization and a third-party provider, outlines security controls, performance metrics, availability requirements, and confidentiality clauses.
+- Memorandum of Understanding (MOU): less formal and binding, expresses mutual intent without detailed specifics
+- Memorandum of Agreement (MOA): formal, outlines specific responsibilities and roles
+- Master Service Agreement (MSA): Covers general terms of engagement across multiple transactions, and used for recurring client relationships, supplemented by Statements of Work
+- Statement of Work (SOW): Specifies project details, deliverables, timelines, and milestones. Also provides in-depth project-related information
+- Non-Disclosure Agreement (NDA): Ensures confidentiality of sensitive information shared during negotiations. Also has commitments to privacy, protecting proprietary data. 
+- Data Use Agreement (DUA): focuses on specific data usage conditions. 
+- Business Partnership Agreement (BPA): Governs business partnerships, goes beyond basic contracts when two entities collaborate. Outlines partnership nature, profit-sharing, decision making, and exit strategies, and defines ownership of intellectual property and revenue distribution 
