@@ -17,6 +17,17 @@ Concealment types
 - Data masking: a method to de-identify some or all characters in a sequence, but not changing the total number of characters that a field should contain. The masked version will be structurally the same, but the data will be hidden. Changing the letters or numbers entered into a password field with dots is an example of data masking. Data that is masked will have the same number of characters as the original data, not a smaller set
 - Encryption: the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted
 
+Security Controls \[[Ref](https://purplesec.us/learn/security-controls/)\]
+- Technical: use technology to reduce vulnerabilities in hardware and software
+- Administrative: policies, procedures, or guidelines that define personnel or business practices in accordance with the organization’s security goals
+- Physical: implementation of security measures in a defined structure used to deter or prevent unauthorized access to sensitive material
+- Preventative: attempt to prevent an incident from occurring
+- Detective: attempt to detect incidents after they have occurred
+- Corrective: attempt to reverse the impact of an incident
+- Deterrent: attempt to discourage individuals from causing an incident
+- Compensating: alternative controls used when a primary control is not feasible
+- Directive: ensure consistent behavior within an organization
+
 ### Threats, vulnerability, and mitigations
 Malware types
 - Logic bomb: executes a malicious action when a specific condition or trigger is met, such as a date, time, or event
@@ -38,11 +49,22 @@ Backup types
 - Incremental backup: saves only the changes made since the last backup
 - Differential backup: saves all changes made since the last full backup
 
+Attributes of threat actors
+- Capability: a threat actor's proficiency in devising new exploit techniques and tools. It can range from using commonly found attack tools to creating zero-day exploits in various systems. Those with the highest capabilities can even deploy non-cyber tools, such as political or military assets
+- Sophistication: the level of intricacy and advancement of a threat actor's methods and tools
+
+
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
 - Jump server: used as a bridge to connect to other servers or networks in separate security zones
 - Real-time Operating System (RTOS): an operating system where the processes running are deterministic and prioritize performance, used on devices like industrial equipment and automobiles. \[[Ref](https://www.professormesser.com/security-plus/sy0-501/embedded-systems/)\] 
-  
+
+Networking 
+- Physical isolation: network design that involves using air-gapping, disconnecting cables, or locking devices to prevent unauthorized access or interference. It can offer benefits such as security, privacy, and reliability.
+- Logical segmentation: network design that involves dividing a network into smaller segments to improve performance and security
+- Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
+- Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
+
 ### Security operations
 Types of web filters
 - Agent-based web filters: installed directly on the end-user's device, ensuring that the filtering policy is enforced consistently, whether the user is on the corporate network or working remotely \[[Ref](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/web-filtering-sy0-701/)\]
@@ -68,6 +90,8 @@ WPA3 features
 - provides individualized data encryption even in open networks
 - it prevents eavesdropping, forging, and tampering with management frames
 
+Mobile
+- Mobile Device Management (MDM): provide organizations with an easy way to manage the security settings on many mobile devices simultaneously. \[[Ref](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/mobile-device-management-2/)\]
   
 ### Security program management and oversight
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
@@ -77,3 +101,10 @@ WPA3 features
 
 - Risk Appetite: the amount of risk an organization is willing to accept in pursuit of its objectives. It's essentially a strategic, high-level view that aligns with the organization's goals and priorities. Think of it as the maximum amount of risk an organization is ready to take on overall, considering its strategic objectives and mission. Risk appetite is about the broader, overarching risk the organization is willing to accept to achieve its strategic goals.
 - Risk Tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. This is more about the granular, day-to-day level of risk an organization can handle while still operating effectively. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations.
+
+Data Governance
+- Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards.
+- Data owner: directly responsible for classifying data and defining access permissions. May also contribute to setting the strategic direction and policies for organizational data management too.
+- Governance board: sets the strategic direction and policies for organizational data management.
+- Security and compliance committees: assessing and managing risks related to data security and compliance
+
