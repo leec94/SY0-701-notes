@@ -78,12 +78,12 @@ Networking
 - Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
 - Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
 
-RAID
+Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
-- Parity: calculation of data in two drive, and stored on a third. if a drive fails, the raid controller can rebuild from other 2 drives 
+- Parity: Calculation of data across two drives, and stored on a third. If a drive fails, the RAID controller can rebuilt from other 2 drives
 	- Dedicated parity: parity information is stored all on a single drive
 	- Distributed parity: spreads data across all drives in the array
-- Mirrored (or redundancy): 2 or more drives each with a copy of the drive, so the volume protected from a drive failure, only one drive needed to work to function normally. 
+- Mirrored (or redundancy): 2 or more drives each with a copy of the drive, so the volume is protected from a drive failure, only one drive needed to work to function normally
 
 |         | Stripe | Mirrored | Parity             | Minimum Drives |
 |---------|--------|----------|--------------------|----------------|
