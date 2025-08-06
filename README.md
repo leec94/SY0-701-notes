@@ -78,6 +78,21 @@ Networking
 - Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
 - Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
 
+RAID
+- Striping: spreads the data  for a single volume across 2 or more drives 
+- Parity: calculation of data in two drive, and stored on a third. if a drive fails, the raid controller can rebuild from other 2 drives 
+	- Dedicated parity: parity information is stored all on a single drive
+	- Distributed parity: spreads data across all drives in the array
+- Mirrored (or redundancy): 2 or more drives each with a copy of the drive, so the volume protected from a drive failure, only one drive needed to work to function normally. 
+
+|         | Stripe | Mirrored | Parity             | Minimum Drives |
+|---------|--------|----------|--------------------|----------------|
+| RAID 0  | yes    | no       | no                 | 2              |
+| RAID 1  | no     | yes      | no                 | 2              |
+| RAID 5  | yes    | no       | yes, distributed   | 3              |
+| RAID 6  | yes    | no       | yes, 2 distributed | 4              |
+| RAID 10 | yes    | yes      | no                 | 4              |
+
 ### Security operations
 Types of web filters
 - Agent-based web filters: installed directly on the end-user's device, ensuring that the filtering policy is enforced consistently, whether the user is on the corporate network or working remotely \[[Ref](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/web-filtering-sy0-701/)\]
