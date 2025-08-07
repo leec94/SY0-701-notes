@@ -77,6 +77,7 @@ Networking
 - Logical segmentation: network design that involves dividing a network into smaller segments to improve performance and security
 - Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
 - Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
+- Port security: feature of managed network switches that allows an organization to limit which devices can connect to a network based on their physical addresses (MAC addresses)
 
 Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
@@ -123,6 +124,7 @@ Wireless Protocols
 - WEP: outdated encryption protocol that has been widely exploited and rendered highly insecure. Its weak key management and static keys make it vulnerable to various attacks, and it can be cracked relatively easily. It should be avoided in modern network environments due to its lack of security
 - TKIP: considered weak and has known vulnerabilities. Due to its security limitations, using TKIP is not advisable, especially when more secure alternatives like AES are available.
 - WPA: has some known vulnerabilities, particularly when using its pre-shared key (PSK) mode. Depending solely on WPA might not provide the level of security required to safeguard modern wireless networks
+- Transport Layer Security (TLS): a protocol that encrypts communications over a network
 - **WPA3** features
   - latest and most secure wireless security protocol
   - utilizes a Diffie-Hellman key agreement
@@ -131,10 +133,16 @@ Wireless Protocols
 
 Encryption protocols
 
-
 Mobile
 - Mobile Device Management (MDM): provide organizations with an easy way to manage the security settings on many mobile devices simultaneously. \[[Ref](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/mobile-device-management-2/)\]
+
+ICS Components
+- Data historian: captures and archives all information from the control loop
+- Distributed Control System (DCS): manages process automation within a single site
+- Human-Machine Interface (HMI): allows operators to interact directly with the system. Its security is paramount to prevent unauthorized access and potential manipulation of the system
+- Programmable Logic Controllers (PLC): embedded devices within ICSs connecting to actuators and sensors
   
+
 ### Security program management and oversight
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
 - Recovery Point Objective (RPO): the maximum amount of data that an organization can afford to lose during a disruption. It represents the point in time to which data must be recovered after recovery efforts are initiated
