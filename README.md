@@ -14,7 +14,7 @@ Notes on CompTIA Security+ SY0-701 exam, covering gaps in my knowledge from vari
 Concealment types
 - Tokenization: the process of substituting a sensitive data element with a non-sensitive equivalent, referred to as a token. The token and the data it substitutes are stored in a secure database. If the original data is needed, it can be accessed using the token and querying the database. The token will be a different size and have a different structure than the original data so the token can’t be used to decipher the original data.
 - Steganography: the practice of concealing a file, message, image, or video within another file, message, image, or video
-- Data masking: a method to de-identify some or all characters in a sequence, but not changing the total number of characters that a field should contain. The masked version will be structurally the same, but the data will be hidden. Changing the letters or numbers entered into a password field with dots is an example of data masking. Data that is masked will have the same number of characters as the original data, not a smaller set
+- Data masking: a method to de-identify some or all characters in a sequence, but not changing the total number of characters that a field should contain. The masked version will be structurally the same, but the data will be hidden. Data that is masked will have the same number of characters as the original data, not a smaller set. _Example:_ Changing the letters or numbers entered into a password field with dots is an example of data masking. 
 - Encryption: the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted
 
 Security Controls \[[Ref](https://purplesec.us/learn/security-controls/)\]
@@ -55,6 +55,10 @@ Password attacks
 Cryptographic attacks
 - Birthday attack: type of cryptographic attack that involves finding two different inputs that produce the same output for a hashing algorithm
 - Downgrade attack: forcing a communication channel to use a weaker encryption algorithm or protocol, making it easier to decrypt or intercept
+
+DDoS Attacks
+- Amplified DDoS: attackers can send a small request to a server, prompting it to reply with a much larger response. The attacker uses a forged source IP (the victim's IP), causing the server's amplified response to flood the victim
+- Reflected DDoS: the attacker sends requests to third-party servers with a forged source IP address (the victim's IP), causing those servers to send responses to the victim
 
 Backup types
 - Image backup: duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings
@@ -149,8 +153,10 @@ ICS Components
 - Mean Time to Repair (MTTR): the average time it takes to restore a failed system or component to a working state after a disruption. It measures the efficiency of the repair process
 - Mean Time Between Failures (MTBF): the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability
 
-- Risk Appetite: the amount of risk an organization is willing to accept in pursuit of its objectives. It's essentially a strategic, high-level view that aligns with the organization's goals and priorities. Think of it as the maximum amount of risk an organization is ready to take on overall, considering its strategic objectives and mission. Risk appetite is about the broader, overarching risk the organization is willing to accept to achieve its strategic goals.
-- Risk Tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. This is more about the granular, day-to-day level of risk an organization can handle while still operating effectively. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations.
+- Risk appetite: the amount of risk an organization is willing to accept in pursuit of its objectives. It's essentially a strategic, high-level view that aligns with the organization's goals and priorities. Think of it as the maximum amount of risk an organization is ready to take on overall, considering its strategic objectives and mission. Risk appetite is about the broader, overarching risk the organization is willing to accept to achieve its strategic goals.
+- Risk tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations. Risk tolerance refers more broadly to an organization's or individual's willingness to take on risk, not the specific predefined level for taking action. 
+- Risk threshold: the limit of acceptable risk that an organization establishes, which once exceeded, triggers a response to reduce the risk to an acceptable level
+- Risk level: the severity or high/low ranking of risk
 
 Data Governance
 - Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards.
