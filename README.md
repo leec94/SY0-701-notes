@@ -70,6 +70,8 @@ Attributes of threat actors
 - Capability: a threat actor's proficiency in devising new exploit techniques and tools. It can range from using commonly found attack tools to creating zero-day exploits in various systems. Those with the highest capabilities can even deploy non-cyber tools, such as political or military assets
 - Sophistication: the level of intricacy and advancement of a threat actor's methods and tools
 
+CVE
+- CVSS Scoring: CVSS scores are calculated using a formula that provides a numerical result but also include the categories of Low, Medium, High, and Critical. Low is anything that results in a score of less than 4.0. Medium is a score of 4-6.9. High is 7.0-8.9. Critical is a score higher than 9.
 
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
@@ -82,6 +84,9 @@ Networking
 - Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
 - Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
 - Port security: feature of managed network switches that allows an organization to limit which devices can connect to a network based on their physical addresses (MAC addresses)
+- Secure Access Service Edge (SASE): a cloud-based solution that integrates network security and WAN capabilities
+- Software-defined wide area network (SD-WAN): provides centralized network management, flexible routing, and traffic management capabilities. It can be hosted both on-premises and in the cloud, giving it an edge for comprehensive WAN optimization 
+
 
 Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
@@ -145,7 +150,9 @@ ICS Components
 - Distributed Control System (DCS): manages process automation within a single site
 - Human-Machine Interface (HMI): allows operators to interact directly with the system. Its security is paramount to prevent unauthorized access and potential manipulation of the system
 - Programmable Logic Controllers (PLC): embedded devices within ICSs connecting to actuators and sensors
-  
+
+Management of data assets
+- Enumeration: in hardware, software, and data asset management involves assigning unique identifiers, access controls, and attributes to each asset. This process allows for granular control over access permissions, ensuring only authorized users can interact with assets. Enumeration supports data confidentiality, integrity, and availability by preventing unauthorized access and ensuring proper resource management
 
 ### Security program management and oversight
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
@@ -157,12 +164,22 @@ ICS Components
 - Risk tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations. Risk tolerance refers more broadly to an organization's or individual's willingness to take on risk, not the specific predefined level for taking action. 
 - Risk threshold: the limit of acceptable risk that an organization establishes, which once exceeded, triggers a response to reduce the risk to an acceptable level
 - Risk level: the severity or high/low ranking of risk
+- Risk rating: incorporates both likelihood and impact to give an overall score to a risk
+- Likelihood: used in qualitative risk analysis to subjectively describe how probable a risk event is, often expressed in terms such as "low," "medium," or "high."
+
 
 Data Governance
 - Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards.
+- Data controller: responsible for determining the purpose and means of data processing, including establishing data ownership and access control 
 - Data owner: directly responsible for classifying data and defining access permissions. May also contribute to setting the strategic direction and policies for organizational data management too.
 - Governance board: sets the strategic direction and policies for organizational data management.
 - Security and compliance committees: assessing and managing risks related to data security and compliance
+
+Regulations 
+- Payment Card Industry Data Security Standard (PCI DSS): an industry-mandated standard for the safe handling and storage of credit card information
+- Federal Information Security Management Act (FISMA): governs the security of data processed by federal government agencies
+- California Consumer Privacy Act (CCPA): a state legislation that provides comprehensive data protection rights to consumers across sectors, horizontally
+- Gramm–Leach–Bliley Act (GLBA): financial industry regulation
 
 Agreement Types
 - Service Level Agreement (SLA): a document that defines the expectations between an organization and a third-party provider, outlines security controls, performance metrics, availability requirements, and confidentiality clauses.
