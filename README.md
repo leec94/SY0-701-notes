@@ -180,6 +180,7 @@ Regulations
 - Federal Information Security Management Act (FISMA): governs the security of data processed by federal government agencies
 - California Consumer Privacy Act (CCPA): a state legislation that provides comprehensive data protection rights to consumers across sectors, horizontally
 - Gramm–Leach–Bliley Act (GLBA): financial industry regulation
+- Family Educational Rights and Privacy Act (FERPA): regulates educational institutions
 
 Agreement Types
 - Service Level Agreement (SLA): a document that defines the expectations between an organization and a third-party provider, outlines security controls, performance metrics, availability requirements, and confidentiality clauses.
