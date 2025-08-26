@@ -39,7 +39,10 @@ Zero trust concepts
 - Authentication server: primarily tasked with validating a user's credentials and ensuring that a user is who they claim to be
 - Policy enforcement point: responsible for enforcing the access control decisions made by the policy engine
 
-
+Certificates
+- Certificate stapling: attaches an OCSP validation to the digital certificate, saving the client and server the time of repeatedly querying the OCSP server for certificate validity
+- Certificate pinning: a technique used to prevent changes in the valid certificate for a domain
+- Certificate chaining: used to delegate authority to subordinate certificate authorities
 
 ### Threats, vulnerability, and mitigations
 Malware types
@@ -59,6 +62,12 @@ Cryptographic attacks
 DDoS Attacks
 - Amplified DDoS: attackers can send a small request to a server, prompting it to reply with a much larger response. The attacker uses a forged source IP (the victim's IP), causing the server's amplified response to flood the victim
 - Reflected DDoS: the attacker sends requests to third-party servers with a forged source IP address (the victim's IP), causing those servers to send responses to the victim
+
+Network Attacks
+- ARP poisoning: an attack that involves sending false MAC address information to a network switch, causing the switch to associate the incorrect MAC address with a particular IP address
+- DNS poisoning: an attack that involves manipulating the DNS server to redirect traffic to malicious sites
+- on-path attack: involves intercepting and potentially altering communication between two parties
+- Disassociation attacks: intentionally disconnect a wireless user from their access point to force a reauthentication that the attacker may collect with a wireless eavesdropping tool
 
 Backup types
 - Image backup: duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings
@@ -140,14 +149,16 @@ NetFlow features
 Wireless Protocols 
 - **AES**: the most secure and widely adopted encryption protocol for wireless networks. Its strong encryption algorithms and extensive testing demonstrate its effectiveness against various attacks. AES is the recommended choice for ensuring robust security in wireless communication
 - WEP: outdated encryption protocol that has been widely exploited and rendered highly insecure. Its weak key management and static keys make it vulnerable to various attacks, and it can be cracked relatively easily. It should be avoided in modern network environments due to its lack of security
-- TKIP: considered weak and has known vulnerabilities. Due to its security limitations, using TKIP is not advisable, especially when more secure alternatives like AES are available.
-- WPA: has some known vulnerabilities, particularly when using its pre-shared key (PSK) mode. Depending solely on WPA might not provide the level of security required to safeguard modern wireless networks
+- TKIP: considered weak and has known vulnerabilities. Due to its security limitations, using TKIP is not advisable, especially when more secure alternatives like AES are available. Used by WPA to rapidly cycle encryption keys and overcome the weaknesses of WEP
+- WPA: has some known vulnerabilities, particularly when using its pre-shared key (PSK) mode. Depending solely on WPA might not provide the level of security required to safeguard modern wireless networks. Uses TKIP to rapidly cycle encryption keys and overcome the weaknesses of WEP
+- WPA2: Uses Counter Mode Cipher Block Chaining Message Authentication Code Protocol (CCMP) to provide enhanced security using AES
 - Transport Layer Security (TLS): a protocol that encrypts communications over a network
 - **WPA3** features
   - latest and most secure wireless security protocol
   - utilizes a Diffie-Hellman key agreement
   - provides individualized data encryption even in open networks
   - it prevents eavesdropping, forging, and tampering with management frames
+  - uses Simultaneous Authentication of Equals (SAE)
 
 Encryption protocols
 
@@ -162,6 +173,12 @@ ICS Components
 
 Management of data assets
 - Enumeration: in hardware, software, and data asset management involves assigning unique identifiers, access controls, and attributes to each asset. This process allows for granular control over access permissions, ensuring only authorized users can interact with assets. Enumeration supports data confidentiality, integrity, and availability by preventing unauthorized access and ensuring proper resource management
+
+Passwords
+- HMAC-based one-time password (HOTP): Tokens that generate passcodes based upon a counter that increments when the user pushes a button
+- Time-based one-time password (TOTP): Tokens that increment automatically based upon the current time 
+
+
 
 ### Security program management and oversight
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
@@ -201,3 +218,10 @@ Agreement Types
 - Non-Disclosure Agreement (NDA): Ensures confidentiality of sensitive information shared during negotiations. Also has commitments to privacy, protecting proprietary data. 
 - Data Use Agreement (DUA): focuses on specific data usage conditions. 
 - Business Partnership Agreement (BPA): Governs business partnerships, goes beyond basic contracts when two entities collaborate. Outlines partnership nature, profit-sharing, decision making, and exit strategies, and defines ownership of intellectual property and revenue distribution 
+
+SOC Types
+- System and Organization Control (SOC) reports: provide the results of an independent audit of a service provider
+- SOC 1 reports: done to verify controls that could impact a client’s financial reporting
+- SOC 2 reports: done to verify controls that could impact security and privacy of data
+- Type 1 reports: simply verify that controls are in place
+- Type 2 reports: verify that the controls are operating efficiently and effectively
