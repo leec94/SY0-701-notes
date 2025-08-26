@@ -80,7 +80,8 @@ CVE
 
 Security systems
 - Web application firewall (WAF): Focuses on inspecting HTTP traffic, prevents common web application attacks like cross-site scripting and SQL injections
-  - can be placed "In-line" or "Out of Band" 
+  - can be placed "In-line" or "Out of Band"
+  - WAF vs NGFW article \[[Ref](https://www.f5.com/c/landing/waf-vs-ngfw-which-technology-do-you-need)\] 
 - Data loss prevention (DLP) system: software or hardware system that aims to monitor data in use, in transit, or at rest to detect and prevent data theft
   - Types: Endpoint, Network, Storage, Cloud based 
 - Intrusion detection system (IDS): logs or alerts if found something suspicious or malicious. Signature-based (from defined signatures) or anomaly based (from baseline)
