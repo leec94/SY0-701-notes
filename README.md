@@ -76,7 +76,15 @@ CVE
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
 - Jump server: used as a bridge to connect to other servers or networks in separate security zones
-- Real-time Operating System (RTOS): an operating system where the processes running are deterministic and prioritize performance, used on devices like industrial equipment and automobiles. \[[Ref](https://www.professormesser.com/security-plus/sy0-501/embedded-systems/)\] 
+- Real-time Operating System (RTOS): an operating system where the processes running are deterministic and prioritize performance, used on devices like industrial equipment and automobiles. \[[Ref](https://www.professormesser.com/security-plus/sy0-501/embedded-systems/)\]
+
+Security systems
+- Web application firewall (WAF): Focuses on inspecting HTTP traffic, prevents common web application attacks like cross-site scripting and SQL injections
+  - can be placed "In-line" or "Out of Band" 
+- Data loss prevention (DLP) system: software or hardware system that aims to monitor data in use, in transit, or at rest to detect and prevent data theft
+  - Types: Endpoint, Network, Storage, Cloud based 
+- Intrusion detection system (IDS): logs or alerts if found something suspicious or malicious. Signature-based (from defined signatures) or anomaly based (from baseline)
+- Intrusion prevention system (IPS): logs, alerts and takes actions when finds something suspicious or malicious.  
 
 Networking 
 - Physical isolation: network design that involves using air-gapping, disconnecting cables, or locking devices to prevent unauthorized access or interference. It can offer benefits such as security, privacy, and reliability.
