@@ -69,6 +69,16 @@ Network Attacks
 - on-path attack: involves intercepting and potentially altering communication between two parties
 - Disassociation attacks: intentionally disconnect a wireless user from their access point to force a reauthentication that the attacker may collect with a wireless eavesdropping tool
 
+Wireless Attacks
+- evil twin: the correct term used to refer to a seemingly identical, legitimate access point that an attacker has set up to cause unsuspecting users to attempt a wireless connection
+
+Web Attacks
+- SQL injection: used to input database commands into an application
+- Cross-site scripting (XSS): attempts to inject client-side code into a server so it will be sent to, and executed on, other clients
+- XML injection: used to input XML code into an application to manipulate how the application works
+- LDAP injection: an attack that can send malicious data to a web form that in turn makes calls or queries to a directory database, such as an X.500-compliant database like Active Directory, or to any other LDAP database.
+- Directory traversal attack: enables a malicious user to inject commands inside the HTTP message in order to travel through the directory structure of the web server
+
 Backup types
 - Image backup: duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings
 - File-level backup: copies individual files and directories
@@ -81,6 +91,9 @@ Attributes of threat actors
 
 CVE
 - CVSS Scoring: CVSS scores are calculated using a formula that provides a numerical result but also include the categories of Low, Medium, High, and Critical. Low is anything that results in a score of less than 4.0. Medium is a score of 4-6.9. High is 7.0-8.9. Critical is a score higher than 9.
+
+Pen test tools 
+- FakeAP: FakeAP is a Linux-based program that broadcasts false SSIDs to effect a denial of service attack on wireless networks
 
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
@@ -99,12 +112,13 @@ Security systems
 Networking 
 - Physical isolation: network design that involves using air-gapping, disconnecting cables, or locking devices to prevent unauthorized access or interference. It can offer benefits such as security, privacy, and reliability.
 - Logical segmentation: network design that involves dividing a network into smaller segments to improve performance and security
+- Security zones: used to segregate networks to protect private networks from public ones such as the Internet, examples include extranets and DMZs  
+- Virtual LANs (VLANs): used to segment hosts into logical networks and to create secure communication boundaries between them. VLANs are implemented on switches
 - Software-defined networking (SDN): a network technology that involves dynamically configuring and managing network devices and services through software
 - Decentralization: network design that involves distributing the control and authority among multiple nodes or entities
 - Port security: feature of managed network switches that allows an organization to limit which devices can connect to a network based on their physical addresses (MAC addresses)
 - Secure Access Service Edge (SASE): a cloud-based solution that integrates network security and WAN capabilities
 - Software-defined wide area network (SD-WAN): provides centralized network management, flexible routing, and traffic management capabilities. It can be hosted both on-premises and in the cloud, giving it an edge for comprehensive WAN optimization 
-
 
 Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
@@ -121,12 +135,22 @@ Redundant Array of Independent Disks (RAID)
 | RAID 6  | yes    | no       | yes, 2 distributed | 4              |
 | RAID 10 | yes    | yes      | no                 | 4              |
 
+Authentication
+- Extensible Authentication Protocol (EAP): framework for various authentication methods
+- Protected Extensible Authentication Protocol (PEAP): used to encapsulate EAP messages over a secure tunnel that uses Transport Layer Security (TLS), mutual authentication using server certificates, and uses Active Directory databases to authenticate a password from the client
+- EAP-TTLS: Requires a digital certificate on the server, but not on the client. Client uses a password for authentication
+- EAP-TLS: uses public key infrastructure with a digital certificate installed on both the client and server, uses mutual authentication
+- EAP-MD5: uses simple passwords and challenge handshake authentication process to provide remote access authentication
+- EAP-FAST: Uses a protected access credential instead of a certificate to establish mutual authentication
+- EAP-LEAP: Cisco proprietary and limited to Cisco devices 
+
+
 ### Security operations
 Types of web filters
 - Agent-based web filters: installed directly on the end-user's device, ensuring that the filtering policy is enforced consistently, whether the user is on the corporate network or working remotely \[[Ref](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/web-filtering-sy0-701/)\]
 - Web security gateway filters: or Unified Threat Management (UTM) device, is a device that filters unsafe content from web traffic, and block risky or unauthorized user behavior. Contains URL filtering, anti-malware detection and blocking, and application control. Also has featues such as firewall, intrusion prevention, and antivirus. Runs on proxy servers or on-prem or in the cloud. \[[Ref](https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway/)\]
 
-Network Access Control: enforces policies that determine which devices are allowed to access the network, and what resources they can access once they're connected \[[Ref](https://www.professormesser.com/security-plus/sy0-501/network-access-control-4/)\]
+Network Access Control (NAC): enforces policies that determine which devices are allowed to access the network, and what resources they can access once they're connected \[[Ref](https://www.professormesser.com/security-plus/sy0-501/network-access-control-4/)\]
 - Agent-based NAC: requires an agent to be installed on every device. Is able to get more detailed information about the device requesting access to the network, and provides continuous monitoring \[[Ref](https://s3msecurity.com/agent-based-or-agentless-which-should-be-preferred/)\]
 - Agentless NAC: does not require installation of agents on devices, typically relies on network level authentication protocols such as 802.1X to authenticate devices and enforce access policies. May be less effective at enforcing security policies 
 
