@@ -2,7 +2,14 @@
 
 Links to helpful resources to study for the CompTIA Security+ SYO-701.
 - Professor Messor Sec+ Training Course: https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv
-- Professor Messer Sec+ Course Notes: https://www.scribd.com/document/756003360/Professor-Messer-Professor-Messer-s-SY0-701-COMPTIA-Security-Course-Notes-Libgen-li 
+- Professor Messer Sec+ Course Notes: https://www.scribd.com/document/756003360/Professor-Messer-Professor-Messer-s-SY0-701-COMPTIA-Security-Course-Notes-Libgen-li
+- "Security+ Get Certified Get Ahead SYO-701 Study Guide" by Darril Gibson and Joe Shelley Resources
+  - Command line basics: https://www.getcertifiedgetahead.com/appendix-a
+  - Log basics: https://www.getcertifiedgetahead.com/appendix-b
+  - Well known ports: https://www.getcertifiedgetahead.com/appendix-c
+  - The OSI Model: https://www.getcertifiedgetahead.com/appendix-d
+  - Glossary: https://www.getcertifiedgetahead.com/appendix-e
+  - Acronyms: https://www.getcertifiedgetahead.com/appendix-f
 - Security+ Prepcast: https://certifiedsecplus.transistor.fm/ 
 - Last Minute Cram Sec+: https://www.scribd.com/document/738962403/12316468431-CompTIA-Security-SY0-701-Last-Minute-Cram
 - Exam Cram Sec+ (first ~90 pages of 400): https://ptgmedia.pearsoncmg.com/images/9780138225575/samplepages/9780138225575_Sample.pdf
