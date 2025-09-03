@@ -18,4 +18,5 @@ Links to helpful resources to study for the CompTIA Security+ SYO-701.
 - Quizlet flashcard sets
   - https://quizlet.com/344139838/security-flash-cards/ 
   - https://quizlet.com/125183829/security-acronyms-flash-cards/ 
-- My Quizlet flashcards: https://quizlet.com/user/leecaroline42/folders/sec-sy0-701 
+- My Quizlet flashcards: https://quizlet.com/user/leecaroline42/folders/sec-sy0-701
+- Check out Study Guide and Practice Exam book or ebooks available at your local library, through Hoopla or O'Reilly for example
