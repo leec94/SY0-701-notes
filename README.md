@@ -261,10 +261,19 @@ Error Rate vs Sensitivity
 - Crossover Error Rate (CER): the sensitivity point at which the FAR and FRR are equal
 
 ### Security program management and oversight
+Business Impact Analysis
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
 - Recovery Point Objective (RPO): the maximum amount of **data** that an organization can afford to lose during a disruption. It represents the point in time to which data must be recovered after recovery efforts are initiated
 - Mean Time to Repair (MTTR): the average time it takes to restore a failed system or component to a working state after a disruption. It measures the efficiency of the repair process
 - Mean Time Between Failures (MTBF): the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability and uptime
+
+Quantitative Risk Analysis 
+- Asset Value (AV): financial value of the asset
+- Exposure Factor (EF): the percentage of the asset value that is expected to be lost if a specific risk event occurs
+- Single Loss Expectancy (SLE): AV * EF, the monetary loss expected from a single occurrence of a risk event, which includes considerations like downtime and associated costs. 
+- Annualized Rate of Occurence (ARO): frequency of threat occurrence within a year, x number of times​
+- Annualized Loss Expectancy (ALE): SLE * ARO, calculating the overall expected annual loss in value ($) by considering both the frequency and impact of risk events, but it encompasses more than just a single even
+
 
 - Risk appetite: the amount of risk an organization is willing to accept in pursuit of its objectives. It's essentially a strategic, high-level view that aligns with the organization's goals and priorities. Think of it as the maximum amount of risk an organization is ready to take on overall, considering its strategic objectives and mission. Risk appetite is about the broader, overarching risk the organization is willing to accept to achieve its strategic goals.
 - Risk tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations. Risk tolerance refers more broadly to an organization's or individual's willingness to take on risk, not the specific predefined level for taking action. 
@@ -274,12 +283,11 @@ Error Rate vs Sensitivity
 - Likelihood: used in qualitative risk analysis to subjectively describe how probable a risk event is, often expressed in terms such as "low," "medium," or "high."
 
 
-Data Governance
-- Data user: 
-- Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards.
-- Data custodian: 
-- Data steward: Like data owners, implements a set of data quality guidelines and ensuring that they are being carried out on a day-to-day basis. Also owns day to day quality issues 
-- Data controller: responsible for determining the purpose and means of data processing, including establishing data ownership and access control 
+Data Governance \[[Ref](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/data-roles-and-responsibilities-sy0-701/)\]
+- Data user: Uses the data
+- Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards. Get instructions from data controller
+- Data steward/custodian: Like data owners, implements a set of data quality guidelines and ensuring that they are being carried out on a day-to-day basis. Ensures compliance with applicable laws and standards. Also owns day to day quality issues 
+- Data controller: responsible for determining the purpose and means of data processing, including establishing data ownership and access control. Tells data processor how data should be used 
 - Data owner: directly responsible for classifying data and defining access permissions. May also contribute to setting the strategic direction and policies for organizational data management too. 
 - Governance board: sets the strategic direction and policies for organizational data management.
 - Security and compliance committees: assessing and managing risks related to data security and compliance
