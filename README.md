@@ -32,7 +32,7 @@ Access Controls
 - Role-Based Access Control (RBAC): an authorization model that assigns permissions to roles, rather than individual users
 - Attribute Based Access Control (ABAC): determines access through a combination of contexts and system wide attributes
 - Discretionary Access Control (DAC): an authorization model where the owner of the resource decides who is allowed to access it
-- Mandatory Access Control (MAC): an authorization model where access to resources is determined by a set of rules defined by a central authority
+- Mandatory Access Control (MAC): an authorization model where access to resources is determined by a set of rules defined by a central authority. The system determines access authorization based on the security labels applied to objects and the clearance levels assigned to users. The system enforces these rules to ensure that users can only access objects for which they have the appropriate clearance. The system administrator may configure the security policies and labels but does not directly control individual access decisions, which are enforced by the system according to the MAC rules.
 
 Zero trust concepts
 - Policy administrator: responsible for defining and managing security policies that dictate access controls
@@ -49,6 +49,9 @@ Certificates
 - Hierarchical model: has a root and subordinate CAs
 - Subordinate: a lower-level CA in a hierarchical model
 - Registration Authority (RA): requests identifying information from the user and forwards certificate requests up to the CA to create a digital certificate
+- Domain validation certificates (DV): provide a lower level of assurance, as they only verify that the applicant has control over the domain
+- Organization validation certificates (OV): offer a moderate level of assurance, verifying the organization's identity in addition to domain control
+- Extended validation certificates (EV): offer the highest possible level of assurance that a certificate authority has verified the identity of the certificate subject
 
 Hashing Algorithms 
 - MD5: produces a 128-bit hash
@@ -147,6 +150,8 @@ Networking
 VPNs
 - TLS VPNs: least susceptible to firewall interference because they typically use port 443, which is the same port used for HTTPS web traffic. This port is commonly allowed full outbound access through firewalls, making it more likely that the VPN connection will be successful
 - IPSec VPNs: use UDP port 500 as well as IP protocols 50 (ESP) and 51 (AH), which are more likely to be blocked by firewalls at customer sites
+- Point-to-Point Tunneling Protocol (PPTP): an obsolete method for implementing virtual private networks.
+- Layer 2 Tunnel Protocol (L2TP) VPN: a tunneling protocol, often used to support VPNs, which encapsulates data for secure transmission over public networks. While it doesn’t encrypt data on its own, it’s often paired with encryption protocols like IPSec. \[[Ref](https://nordlayer.com/learn/vpn/l2tp/)\]
 
 Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
