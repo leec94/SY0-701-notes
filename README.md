@@ -66,8 +66,10 @@ Malware types
 - Worm: self-replicates and spreads to other systems or networks without user interaction
 
 Password attacks
-- Spraying: trying common passwords against multiple accounts, hoping to find a match
+- Password Spraying: trying common passwords against multiple accounts, hoping to find a match
 - Brute force: involves trying all possible combinations of characters until the correct password is found
+- Dictionary: using a precompiled list of possible passwords, typically applied to one user account
+- Rainbow Table: precomputed tables of hash values to quickly reverse cryptographic hash functions, targeting stored hashed passwords
 
 Cryptographic attacks
 - Birthday attack: type of cryptographic attack that involves finding two different inputs that produce the same output for a hashing algorithm
@@ -207,6 +209,10 @@ NetFlow features
 - can identify the source and destination of traffic, making it easier to spot potential threats
 - helps provide an understanding of network traffic flow, enhancing security by identifying unusual patterns
 
+Wireless
+- A Wi-Fi controller: can automatically adjust access point settings, such as channel assignments and power levels, in real-time to optimize performance and minimize interference across the network
+- Wi-Fi Protected Setup (WPS): push button feature on routers that allows you to easily and quickly connect devices to your Wi-Fi network without manually entering the network name (SSID) or password. Not secure and not recommended  
+
 Wireless Protocols 
 - **AES**: the most secure and widely adopted encryption protocol for wireless networks. Its strong encryption algorithms and extensive testing demonstrate its effectiveness against various attacks. AES is the recommended choice for ensuring robust security in wireless communication
 - WEP: outdated encryption protocol that has been widely exploited and rendered highly insecure. Its weak key management and static keys make it vulnerable to various attacks, and it can be cracked relatively easily. It should be avoided in modern network environments due to its lack of security. It has a weak implementation of 24-bit initialization vector (IV), so is vulnerable to IV attacks. 
@@ -221,7 +227,17 @@ Wireless Protocols
   - it prevents eavesdropping, forging, and tampering with management frames
   - uses Simultaneous Authentication of Equals (SAE)
 
-Encryption protocols
+Insecure vs Secure protocols
+| Insecure             | Secure                               |
+|----------------------|--------------------------------------|
+| HTTP (port 80)       | HTTPS (port 443)                     |
+| FTP (port 20,21)     | SFTP / FTPS (port 465)               |
+| Telnet (port 23)     | SSH/SCP/SFTP (port 22)               |
+| SMTP (port 25)       | SMTPS (port 465)                     |
+| POP3 (port 110)      | POP3S (port 995)                     |
+| NNTP (port 119)      | NNTPS (port 563)                     |
+| IMAP (port 143)      | IMAPS (port 993)                     |
+| SNMP (port 161,162)  | SNMPv3 (port 161, 162, 10161, 10162) |
 
 Mobile
 - Mobile Device Management (MDM): provide organizations with an easy way to manage the security settings on many mobile devices simultaneously. \[[Ref](https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/mobile-device-management-2/)\]
@@ -300,6 +316,12 @@ Regulations
 - Gramm–Leach–Bliley Act (GLBA): financial industry regulation
 - Family Educational Rights and Privacy Act (FERPA): regulates educational institutions
 - Sarbanes Oxley Act (SOX): regulates the financial accounting practices of publicly traded companies 
+- European Union’s (EU) Global Data Protection Regulation (GDPR): aims to protect EU citizens by holding businesses financially responsible for the compromise of personal data in the event of a security breach.
+  - Data Protection Officer (DPO) guidelines:
+    - Regulatory bodies must be informed of the name and contact information for the DPO
+    - Organizations may not provide instructions to the DPO on performing their tasks under GDRP Article 39
+    - DPOs must be appointed based on professional qualities and expert knowledge
+    - Organizations are allowed to designate a contractor or service provider as an external DPO, if they wish to do so
 
 Agreement Types
 - Service Level Agreement (SLA): a document that defines the expectations between an organization and a third-party provider, outlines security controls, performance metrics, availability requirements, and confidentiality clauses.
