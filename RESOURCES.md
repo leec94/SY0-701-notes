@@ -14,7 +14,8 @@ Links to helpful resources to study for the CompTIA Security+ SYO-701.
 - Last Minute Cram Sec+: https://www.scribd.com/document/738962403/12316468431-CompTIA-Security-SY0-701-Last-Minute-Cram
 - Exam Cram Sec+ (first ~90 pages of 400): https://ptgmedia.pearsoncmg.com/images/9780138225575/samplepages/9780138225575_Sample.pdf
 - SkillCertPro Security Plus+ Master Cheat Sheet: https://skillcertpro.com/wp-content/uploads/2020/08/COMPTIA-Security-Plus-Master-Cheat-Sheet.pdf
-- StationX Security+ Cheat Sheet: https://www.stationx.net/comptia-security-cheat-sheet/ 
+- StationX Security+ Cheat Sheet: https://www.stationx.net/comptia-security-cheat-sheet/
+- Ports and Protocols Reference Sheet: https://www.scribd.com/document/748433638/Cyberkraft-Security-Ports-and-Protocols-Reference-Sheet-SY0-701   
 - Quizlet flashcard sets
   - https://quizlet.com/344139838/security-flash-cards/ 
   - https://quizlet.com/125183829/security-acronyms-flash-cards/ 
