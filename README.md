@@ -92,6 +92,10 @@ Web Attacks
 - XML injection: used to input XML code into an application to manipulate how the application works
 - LDAP injection: an attack that can send malicious data to a web form that in turn makes calls or queries to a directory database, such as an X.500-compliant database like Active Directory, or to any other LDAP database.
 - Directory traversal attack: enables a malicious user to inject commands inside the HTTP message in order to travel through the directory structure of the web server
+- Pharming attack: the victim was redirected to an illegitimate site that mimicked the corporate site and stole the victim's credentials. Pharming involves manipulating DNS entries or exploiting vulnerabilities to redirect users to fraudulent websites without their knowledge
+- Phishing: sending deceptive communications, usually emails, to trick individuals into disclosing personal information, but it typically involves direct solicitation
+- Whaling: type of phishing attack that targets high-profile individuals, such as executives, and also typically involves direct solicitation
+- Watering hole attack: involves compromising a legitimate website that the target is known to visit, and then using it to deliver malware or capture information
 
 Backup types
 - Image backup: duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings
@@ -138,6 +142,10 @@ Networking
 - Secure Access Service Edge (SASE): a cloud-based solution that integrates network security and WAN capabilities
 - Software-defined wide area network (SD-WAN): provides centralized network management, flexible routing, and traffic management capabilities. It can be hosted both on-premises and in the cloud, giving it an edge for comprehensive WAN optimization 
 
+VPNs
+- TLS VPNs: least susceptible to firewall interference because they typically use port 443, which is the same port used for HTTPS web traffic. This port is commonly allowed full outbound access through firewalls, making it more likely that the VPN connection will be successful
+- IPSec VPNs: use UDP port 500 as well as IP protocols 50 (ESP) and 51 (AH), which are more likely to be blocked by firewalls at customer sites
+
 Redundant Array of Independent Disks (RAID)
 - Striping: spreads the data  for a single volume across 2 or more drives 
 - Parity: Calculation of data across two drives, and stored on a third. If a drive fails, the RAID controller can rebuilt from other 2 drives
@@ -168,6 +176,11 @@ SSL Transaction Steps
 3. The client validates the certificate and ensures it has not expired or been revoked.
 4. The client creates a random symmetric key (known as a session key) used to encrypt the web page content, and then encrypts the symmetric key with the public key obtained from the web server.
 5. The encrypted information is sent to the web server. The web server decrypts and obtains the symmetric key (session key). The web server uses the symmetric key to encrypt information between the client and the server.
+
+Domain Name System Security Extensions (DNSSEC) \[[Ref](https://securityscorecard.com/blog/what-is-dnssec-and-why-is-it-important)\]
+- DNSSEC: Adds authentication to DNS response
+- DNSKEY record: should contain the public key that corresponds to the private key used to sign the records
+- the records would be signed with the organization’s private key and should be verified with the organization’s public key
 
 ### Security operations
 Types of web filters
@@ -242,11 +255,16 @@ Penetration Testing Methodology
   - Post exploitation
   - Reporting 
 
+Error Rate vs Sensitivity
+- False Acceptance Rate (FAR): the frequency at which the system admits a person who should not be admitted
+- False Rejection Rate (FRR): the frequency at which the system denies access to an authorized user incorrectly
+- Crossover Error Rate (CER): the sensitivity point at which the FAR and FRR are equal
+
 ### Security program management and oversight
 - Recovery Time Objective (RTO): the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality
-- Recovery Point Objective (RPO): the maximum amount of data that an organization can afford to lose during a disruption. It represents the point in time to which data must be recovered after recovery efforts are initiated
+- Recovery Point Objective (RPO): the maximum amount of **data** that an organization can afford to lose during a disruption. It represents the point in time to which data must be recovered after recovery efforts are initiated
 - Mean Time to Repair (MTTR): the average time it takes to restore a failed system or component to a working state after a disruption. It measures the efficiency of the repair process
-- Mean Time Between Failures (MTBF): the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability
+- Mean Time Between Failures (MTBF): the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability and uptime
 
 - Risk appetite: the amount of risk an organization is willing to accept in pursuit of its objectives. It's essentially a strategic, high-level view that aligns with the organization's goals and priorities. Think of it as the maximum amount of risk an organization is ready to take on overall, considering its strategic objectives and mission. Risk appetite is about the broader, overarching risk the organization is willing to accept to achieve its strategic goals.
 - Risk tolerance: more specific and operational. It represents the acceptable level of risk exposure for various activities or projects within the organization. Risk tolerance is about the specific, measurable levels of risk acceptable in various situations. Risk tolerance refers more broadly to an organization's or individual's willingness to take on risk, not the specific predefined level for taking action. 
@@ -257,11 +275,15 @@ Penetration Testing Methodology
 
 
 Data Governance
+- Data user: 
 - Data processor: processes personal data for controllers and ensures implementation of security measures. They are tasked with handling personal data in accordance with the controller's directions and must secure the data as per the established standards.
+- Data custodian: 
+- Data steward: Like data owners, implements a set of data quality guidelines and ensuring that they are being carried out on a day-to-day basis. Also owns day to day quality issues 
 - Data controller: responsible for determining the purpose and means of data processing, including establishing data ownership and access control 
-- Data owner: directly responsible for classifying data and defining access permissions. May also contribute to setting the strategic direction and policies for organizational data management too.
+- Data owner: directly responsible for classifying data and defining access permissions. May also contribute to setting the strategic direction and policies for organizational data management too. 
 - Governance board: sets the strategic direction and policies for organizational data management.
 - Security and compliance committees: assessing and managing risks related to data security and compliance
+
 
 Regulations 
 - Payment Card Industry Data Security Standard (PCI DSS): an industry-mandated standard for the safe handling and storage of credit card information
