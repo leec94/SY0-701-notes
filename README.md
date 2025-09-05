@@ -67,6 +67,9 @@ Malware types
 - Ransomware: encrypts the data or files on a system and demands a ransom for their decryption or restoration
 - Trojan: disguises itself as a legitimate or benign program, but performs malicious actions when executed.
 - Worm: self-replicates and spreads to other systems or networks without user interaction
+- Fileless Malware: characterized by its evasion techniques, utilizing legitimate system processes and tools, and running directly in memory without writing files to the disk. 
+- Rootkit: aim to provide unauthorized access to a computer or areas of its software.
+- Adware: primarily focuses on delivering unwanted advertisements to users. 
 
 Password attacks
 - Password Spraying: trying common passwords against multiple accounts, hoping to find a match
@@ -94,13 +97,19 @@ Wireless Attacks
 Web Attacks
 - SQL injection: used to input database commands into an application
 - Cross-site scripting (XSS): attempts to inject client-side code into a server so it will be sent to, and executed on, other clients
+- Cross-site request forgery (XSRF): exploits applications that use cookies to authenticate users and track sessions. In this type of attack, a victim is tricked into performing unwanted actions on a web application in which they're authenticated, without the victim necessarily having to click a link. The attacker sends an HTTP request to the victim's browser, spoofing an action on the target site, such as changing account settings. 
+- Session hijacking: involves taking over a user's session, typically by obtaining their session cookie. While it can result in unauthorized changes, it doesn't typically involve the victim being on an external site before the unexpected change
+- Session token prediction: focuses on identifying potential weaknesses in the generation of session tokens. If an attacker can predict the session token, they can take over a session. This type of attack is more about guessing session values rather than inducing unintended changes on behalf of authenticated users.
 - XML injection: used to input XML code into an application to manipulate how the application works
 - LDAP injection: an attack that can send malicious data to a web form that in turn makes calls or queries to a directory database, such as an X.500-compliant database like Active Directory, or to any other LDAP database.
 - Directory traversal attack: enables a malicious user to inject commands inside the HTTP message in order to travel through the directory structure of the web server
+
+Phishing
 - Pharming attack: the victim was redirected to an illegitimate site that mimicked the corporate site and stole the victim's credentials. Pharming involves manipulating DNS entries or exploiting vulnerabilities to redirect users to fraudulent websites without their knowledge
 - Phishing: sending deceptive communications, usually emails, to trick individuals into disclosing personal information, but it typically involves direct solicitation
 - Whaling: type of phishing attack that targets high-profile individuals, such as executives, and also typically involves direct solicitation
 - Watering hole attack: involves compromising a legitimate website that the target is known to visit, and then using it to deliver malware or capture information
+
 
 Backup types
 - Image backup: duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings
@@ -207,6 +216,11 @@ Features of stateful firewall
 - tracking of connections and requests
 - allowing return traffic for outbound requests
 - improving awareness of connection states on layer 4
+
+Network Devices
+- Secure web gateways (SWGs): tailored to handle user traffic and can filter URLs based on content blacklists. They also provide threat analysis and integrate features like DLP and CASB to guard against various unauthorized egress threats. 
+- Data loss prevention (DLP) systems: focused on preventing data breaches
+- Cloud Access Security Broker (CASB): a security policy enforcement point positioned between enterprise users and cloud service providers. CASBs can combine multiple different security policies, from authentication and credential mapping to encryption, malware detection, and more. \[[Ref](https://www.microsoft.com/en-us/security/business/security-101/what-is-a-cloud-access-security-broker-casb)\]
 
 NetFlow features
 - allows for the visualization of flow patterns
