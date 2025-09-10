@@ -302,6 +302,13 @@ Business Impact Analysis
 - Mean Time to Repair (MTTR): the average time it takes to restore a failed system or component to a working state after a disruption. It measures the efficiency of the repair process
 - Mean Time Between Failures (MTBF): the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability and uptime
 
+Risk Types
+- Financial: risk of monetary damage to the organization as the result of a data breach
+- Strategic: the risk that an organization will become less effective in meeting its major goals and objectives as a result of the breach
+- Reputational: when the negative publicity surrounding a security breach causes the loss of goodwill among customers, employees, suppliers, and other stakeholders
+- Operational: risk to the organization's ability to carry out its day-to-day functions
+- Compliance: occurs when a security breach causes an organization to run afoul of legal or regulatory requirements
+
 Quantitative Risk Analysis 
 - Asset Value (AV): financial value of the asset
 - Exposure Factor (EF): the percentage of the asset value that is expected to be lost if a specific risk event occurs
