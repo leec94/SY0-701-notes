@@ -122,7 +122,15 @@ Attributes of threat actors
 - Sophistication: the level of intricacy and advancement of a threat actor's methods and tools
 
 CVE
+- Security Content Automation Protocol (SCAP): an effort by the security community, led by the National Institute of Standards and Technology (NIST), to create a standardized approach for communicating security-related information. 
+- Common Configuration Enumeration (CCE): Provides a standard nomenclature for discussing system configuration issues
+- Common Platform Enumeration (CPE): Provides a standard nomenclature for describing product names and versions
+- Common Vulnerabilities and Exposures (CVE): Provides a standard nomenclature for describing security-related software flaws
+- Common Vulnerability Scoring System (CVSS): Provides a standardized approach for measuring and describing the severity of security-related software flaws
 - CVSS Scoring: CVSS scores are calculated using a formula that provides a numerical result but also include the categories of Low, Medium, High, and Critical. Low is anything that results in a score of less than 4.0. Medium is a score of 4-6.9. High is 7.0-8.9. Critical is a score higher than 9.
+- Extensible Configuration Checklist Description Format (XCCDF): A language for specifying checklists and reporting checklist results
+- Open Vulnerability and Assessment Language (OVAL): A language for specifying low-level testing procedures used by checklists
+
 
 Pen test tools 
 - FakeAP: FakeAP is a Linux-based program that broadcasts false SSIDs to effect a denial of service attack on wireless networks
@@ -130,6 +138,11 @@ Pen test tools
 - Sn1per: a tool that automates a scan of a system and identifies vulnerabilities that exist on that system
 - hping: a ping program that allows you to customize the protocol used and the port used to perform the ping
 - netcat: a program used to open a port on a system or connect to an open port on another system
+
+Reconnaissane types
+- war driving: testers drive by facilities in a car equipped with high-end antennas and attempt to eavesdrop on or connect to wireless networks
+- war flying: eavesdropping with drones or unmanned aerial vehicles (UAVs)
+
 
 ### Security architecture
 - Proxy server: stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server
