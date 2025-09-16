@@ -40,6 +40,7 @@ Zero trust concepts
 - Policy enforcement point: responsible for enforcing the access control decisions made by the policy engine
 
 Certificates
+- Online Certificate Status Protocol (OCSP): provides real-time checking of a digital certificate's status using a remote server
 - Certificate stapling: attaches an OCSP validation to the digital certificate, saving the client and server the time of repeatedly querying the OCSP server for certificate validity
 - Certificate pinning: a technique used to prevent changes in the valid certificate for a domain
 - Certificate chaining: used to delegate authority to subordinate certificate authorities
@@ -52,6 +53,10 @@ Certificates
 - Domain validation certificates (DV): provide a lower level of assurance, as they only verify that the applicant has control over the domain
 - Organization validation certificates (OV): offer a moderate level of assurance, verifying the organization's identity in addition to domain control
 - Extended validation certificates (EV): offer the highest possible level of assurance that a certificate authority has verified the identity of the certificate subject
+Certificate revocation lists (CRLs): a slower, outdated approach to managing certificate status
+- Root CA: usually run as an offline CA that delegates authority to intermediate CAs that run as online CAs. Highly protected and not normally used for certificate issuance 
+- PFX format: format used for Windows systems that store certificates in binary format
+- P7B format: format used for Windows systems storing files in text format
 
 Hashing Algorithms 
 - MD5: produces a 128-bit hash
