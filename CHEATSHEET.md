@@ -4,10 +4,10 @@ Notes I want to add to my cheatsheet on exam day.
 
 ## Cheatsheet Notes
 
-Ports and protocols 
+#### Ports and protocols 
 HTTP (80), HTTPS (443), SSH (22), Telnet (23), FTP (21), SMTP (25), DNS (53), DHCP (67/68)
 
-Insecure vs Secure protocols
+#### Insecure vs Secure protocols
 | Insecure             | Secure                               |
 |----------------------|--------------------------------------|
 | HTTP (port 80)       | HTTPS (port 443)                     |
@@ -20,7 +20,7 @@ Insecure vs Secure protocols
 | SNMP (port 161,162)  | SNMPv3 (port 161, 162, 10161, 10162) |
 
 
-RAID levels 
+#### RAID levels 
 
 |         | Stripe | Mirrored | Parity             | Minimum Drives |
 |---------|--------|----------|--------------------|----------------|
@@ -30,17 +30,17 @@ RAID levels
 | RAID 6  | yes    | no       | yes, 2 distributed | 4              |
 | RAID 10 | yes    | yes      | no                 | 4              |
 
-Risk calculations 
+#### Risk calculations 
 ```
 SLE = AV * EF
 ALE = SLE * ARO 
 ```
 
-Secure encryption protocols
+#### Secure encryption protocols
 - **Hash**: SHA-256 (good), MD5 (bad)​
 - **Symmetric**: AES (good), DES (bad)​
 - **Asymmetric**: RSA, ECC
 - **Wireless** WPA3 (good), WEP,WPA2 (bad)
 
-Incident response phases
+#### Incident response phases
 Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned
