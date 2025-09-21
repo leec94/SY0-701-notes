@@ -36,6 +36,10 @@ ALE = SLE * ARO
 ```
 
 Secure encryption protocols
+- **Hash**: SHA-256 (good), MD5 (bad)​
+- **Symmetric**: AES (good), DES (bad)​
+- **Asymmetric**: RSA, ECC
+- **Wireless** WPA3 (good), WEP,WPA2 (bad)
 
 Incident response phases
 Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned
