@@ -36,3 +36,6 @@ ALE = SLE * ARO
 ```
 
 Secure encryption protocols
+
+Incident response phases
+Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned
