@@ -268,7 +268,7 @@ Insecure vs Secure protocols
 | Insecure             | Secure                               |
 |----------------------|--------------------------------------|
 | HTTP (port 80)       | HTTPS (port 443)                     |
-| FTP (port 20,21)     | SFTP / FTPS (port 465)               |
+| FTP (port 20,21)     | SFTP / FTPS (port 990)               |
 | Telnet (port 23)     | SSH/SCP/SFTP (port 22)               |
 | SMTP (port 25)       | SMTPS (port 465)                     |
 | POP3 (port 110)      | POP3S (port 995)                     |
